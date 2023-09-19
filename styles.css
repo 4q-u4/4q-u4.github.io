@@ -1,0 +1,51 @@
+body {
+    font-family: 'VT323', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-left h1 {
+    font-size: 24px;
+}
+
+.header-right ul {
+    list-style: none;
+}
+
+.header-right ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-right ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.specialization {
+    color: #3498db; /* Blue color from dark mode */
+}
