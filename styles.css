@@ -1,9 +1,19 @@
-body {
-    font-family: 'VT323', monospace;
+/* Reset some default browser styles */
+body, h1, h2, ul {
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black background color */
+}
+
+/* Set background color and font */
+body {
+    font-family: 'VT323';
+    background-color: #1a1f22; /* Black background color */
     color: #fff; /* White text color */
+    font-weight: 600;
+
+        font-smooth: always;
+
+    
 }
 
 .container {
@@ -12,43 +22,156 @@ body {
     padding: 20px;
 }
 
-
-.hero {
-    text-align: center;
-    padding: 100px 0;
-}
-
-.hero h2 {
-    font-size: 32px;
-}
-
-.specialization {
-    color: #3498db; /* Blue color from dark mode */
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Header styles */
+.header {
     padding: 10px 0;
 }
 
-.header-left h1 {
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
     font-size: 24px;
+    color: #9a99ff;
     margin: 0;
 }
 
-.header-right ul {
+.header-nav ul {
     list-style: none;
-    display: flex;
-    align-items: center; /* Align menu items vertically in the middle */
 }
 
-.header-right ul li {
+.header-nav ul li {
+    display: inline;
     margin-right: 20px;
 }
 
-.header-right ul li a {
+.header-nav ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    height: 100vh; /* Set the height to 100% of viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.hero h2 {
+    font-size: 122px;
+    margin: 0;
+}
+
+.specialization {
+    color: #e6db74; /* Blue color from dark mode */
+}
+
+/* Footer styles (customize as needed) */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 7px;
+    height: 85px;
+    background-color: #e6db74;
+    animation: blink 0.7s infinite;
+}
+
+
+/* About Me section styles */
+.about-me {
+    background-color: #ffe066; /* Complementary color to #1a1f22 */
+    padding: 60px 0;
+    text-align: center;
+    color: #1a1f22; /* Text color that complements the background color */
+}
+
+.about-me h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1a1f22; /* Text color that complements the background color */
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #1a1f22; /* Text color that complements the background color */
+}
+
+.marker {
+    color: #9a99ff;
+    font-size: 40px;
+}
+
+
+/* Button styles */
+.pixelated-button {
+    width: 30%;
+    background-color: transparent; /* Transparent background */
+    border: 4px solid #e6db74; /* Yellow border */
+    color: #e6db74; /* Text color matches the border color */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 4px 4px #e6db74;
+
+
+}
+
+.pixelated-button:hover {
+    border-color: #9a99ff; /* Yellow background on hover */
+    color: #9a99ff; /* Text color change on hover */
+    box-shadow: #9a99ff;
+}
+
+
+/* Add styles to hide the text initially */
+#portfolio-heading {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+}
+
+/* Define the typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Define the blinking cursor animation */
+@keyframes blink-caret {
+    from, to { border-right: 2px solid transparent; }
+    50% { border-right: 2px solid #e6db74; }
+}
+
+/* Apply the typing and blinking cursor animations */
+#portfolio-heading.typing {
+    animation: typing 2s steps(10, end) forwards,
+               blink-caret 0.5s step-end infinite;
 }
