@@ -50,7 +50,9 @@ body {
 
 .header-nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #e6db74;
+    justify-content: space-between;
+    font-size: 23px;
 }
 
 /* Hero section styles */
@@ -65,8 +67,10 @@ body {
 }
 
 .hero h2 {
-    font-size: 122px;
+    justify-content: center;
+    font-size: 80px;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .specialization {
@@ -92,14 +96,14 @@ body {
     50% { opacity: 0; }
 }
 
-.cursor {
+/* .cursor {
     display: inline-block;
     vertical-align: middle;
     width: 7px;
     height: 85px;
     background-color: #e6db74;
     animation: blink 0.7s infinite;
-}
+} */
 
 
 /* About Me section styles */
@@ -148,30 +152,30 @@ body {
     color: #9a99ff; /* Text color change on hover */
     box-shadow: #9a99ff;
 }
-
-
-/* Add styles to hide the text initially */
-#portfolio-heading {
+.hi{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 60px;
+}
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+.specialization {
     display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
+    color: #9a99ff
 }
-
-/* Define the typing animation */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+.cursor {
+    animation: blink 0.7s infinite;
+    color:#9a99ff
 }
-
-/* Define the blinking cursor animation */
-@keyframes blink-caret {
-    from, to { border-right: 2px solid transparent; }
-    50% { border-right: 2px solid #e6db74; }
-}
-
-/* Apply the typing and blinking cursor animations */
-#portfolio-heading.typing {
-    animation: typing 2s steps(10, end) forwards,
-               blink-caret 0.5s step-end infinite;
+.cursor:before {
+    content: "|"; }/* Content inside the cursor */
+    @keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
