@@ -62,11 +62,6 @@ body {
 /* Hero section styles */
 .hero {
   text-align: center;
-  height: 100vh; /* Set the height to 100% of viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0;
 }
 
