@@ -1,181 +1,144 @@
 /* Reset some default browser styles */
 body, h1, h2, ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Set background color and font */
 body {
-    font-family: 'VT323';
-    background-color: #1a1f22; /* Black background color */
-    color: #fff; /* White text color */
-    font-weight: 600;
-     min-height: 100vh;
-        font-smooth: always;
-
-    
+  font-family: 'VT323';
+  background-color: #1a1f22; /* Black background color */
+  color: #fff; /* White text color */
+  font-weight: 600;
+  overflow: hidden; /* Add this line to prevent scrolling */
+  font-smooth: always;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header styles */
 .header {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-title {
-    font-size: 24px;
-    color: #9a99ff;
-    margin: 0;
+  font-size: 24px;
+  color: #9a99ff;
+  margin: 0;
 }
 
 .header-nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 .header-nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 .header-nav ul li a {
-    text-decoration: none;
-    color: #e6db74;
-    justify-content: space-between;
-    font-size: 23px;
+  text-decoration: none;
+  color: #e6db74;
+  justify-content: space-between;
+  font-size: 23px;
 }
 
 /* Hero section styles */
 .hero {
-    text-align: center;
-    height: 100vh; /* Set the height to 100% of viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+  text-align: center;
+  height: 100vh; /* Set the height to 100% of viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .hero h2 {
-    justify-content: center;
-    font-size: 80px;
-    margin: 0;
-    text-transform: uppercase;
+  justify-content: center;
+  font-size: 80px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .specialization {
-    color: #e6db74; /* Blue color from dark mode */
+  color: #e6db74; /* Blue color from dark mode */
 }
 
 /* Footer styles (customize as needed) */
 .footer {
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+  padding: 20px 0;
 }
 
 
 
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 /* .cursor {
-    display: inline-block;
-    vertical-align: middle;
-    width: 7px;
-    height: 85px;
-    background-color: #e6db74;
-    animation: blink 0.7s infinite;
+  display: inline-block;
+  vertical-align: middle;
+  width: 7px;
+  height: 85px;
+  background-color: #e6db74;
+  animation: blink 0.7s infinite;
 } */
 
 
 /* About Me section styles */
 .about-me {
-    background-color: #ffe066; /* Complementary color to #1a1f22 */
-    padding: 60px 0;
-    text-align: center;
-    color: #1a1f22; /* Text color that complements the background color */
+  background-color: #ffe066; /* Complementary color to #1a1f22 */
+  padding: 60px 0;
+  text-align: center;
+  color: #1a1f22; /* Text color that complements the background color */
 }
 
 .about-me h3 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #1a1f22; /* Text color that complements the background color */
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1a1f22; /* Text color that complements the background color */
 }
 
 .about-me p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #1a1f22; /* Text color that complements the background color */
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1a1f22; /* Text content that complements the background color */
 }
 
 .marker {
-    color: #9a99ff;
-    font-size: 40px;
+  color: #9a99ff;
+  font-size: 40px;
 }
 
 
 /* Button styles */
 .pixelated-button {
-    width: 30%;
-    background-color: transparent; /* Transparent background */
-    border: 4px solid #e6db74; /* Yellow border */
-    color: #e6db74; /* Text color matches the border color */
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    box-shadow: 4px 4px #e6db74;
-
-
-}
-
-.pixelated-button:hover {
-    border-color: #9a99ff; /* Yellow background on hover */
-    color: #9a99ff; /* Text color change on hover */
-    box-shadow: #9a99ff;
-}
-.hi{
-    padding-top: 10%;
-    text-align: center;
-    font-size: 60px;
-}
-.container {
-    text-align: center;
-    margin-top: 100px;
-}
-.specialization {
-    display: inline-block;
-    color: #9a99ff
-}
-.cursor {
-    animation: blink 0.7s infinite;
-    color:#9a99ff
-}
-.cursor:before {
-    content: "|"; }/* Content inside the cursor */
-    @keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+  width: 30%;
+  background-color: transparent; /* Transparent background */
+  border: 4px solid #e6db74; /* Yellow border */
+  color: #e6db74; /* Text color matches the border color */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 4px 4px #e
 }
