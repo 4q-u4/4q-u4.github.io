@@ -37,8 +37,9 @@ body {
   margin: 0;
 }
 .hi{
-    align-items: center;
-
+   text-align: center;
+  font-size: 70px;
+  padding-top: 60px;
 }
 
 
