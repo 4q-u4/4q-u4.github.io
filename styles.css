@@ -10,7 +10,7 @@ body {
     background-color: #1a1f22; /* Black background color */
     color: #fff; /* White text color */
     font-weight: 600;
-
+     min-height: 100vh;
         font-smooth: always;
 
     
