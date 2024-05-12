@@ -36,6 +36,11 @@ body {
   color: #9a99ff;
   margin: 0;
 }
+.hi{
+    align-items: center;
+
+}
+
 
 .header-nav ul {
   list-style: none;
