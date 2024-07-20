@@ -7418,9 +7418,13 @@ button.bg-dark:focus {
   padding: 3rem !important;
 }
 
-.pt-5,
+/* .ptt-5,
 .py-5 {
   padding-top: 3rem !important;
+} */
+
+.ptt-5 {
+  padding-top: 3em !important;
 }
 
 .pr-5,
